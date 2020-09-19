@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 
             local binCoords = GetEntityCoords(entity)
 
-            ESX.Game.Utils.DrawText3D(binCoords + vector3(0.0, 0.0, 0.5), "~w~Press ~r~E ~w~for buy coffee!", 0.7)
+            ESX.Game.Utils.DrawText3D(binCoords + vector3(0.0, 0.0, 0.5), "~w~Press ~r~E ~w~to buy coffee!", 0.7)
 
             if IsControlJustReleased(0, 38) then
 				ESX.TriggerServerCallback('esx_coffeemachine:checkMoney', function(hasEnoughMoney)
